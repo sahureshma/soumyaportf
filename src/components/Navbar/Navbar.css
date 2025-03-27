@@ -4,7 +4,7 @@ nav{
   background:transparent;
   display: flex;
   padding: 0.7rem 1.8rem ;
- 
+
   gap: 1.2rem;
   
   
@@ -13,16 +13,20 @@ nav{
 }
 
 nav a{
-   
+    color: white;
     padding: 0.4rem;
     border-radius: 50%;
     font-size: 1.2rem;
     display: flex;
+    font-size: 24px;
+    font-weight: bold;
    
 }
-
+nav a:hover{
+color: aqua;
+}
 
 nav a.active{
    
-    color: var(--color-white);
+    color: var(--color-deepblue);
 }

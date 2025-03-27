@@ -1,8 +1,12 @@
 .contact__container{
-    width: 58%;
+    width: 68%;
     display: grid;
     grid-template-columns: 30% 58%;
     gap: 12%;
+ 
+}
+.con{
+    margin-top: -280px;
 }
 .contact__options{
     display: flex;
@@ -19,7 +23,7 @@
 }
 .contact__option:hover{
     background: transparent;
-    background-color:skyblue;
+    background-color:#24b676;
     color:black
 }
 .cantact__icon{
@@ -31,6 +35,10 @@
     margin-top: 0.7rem;
     display: inline-block;
     font-size: 0.8rem;
+}
+.con h3{
+    font-size: 26px;
+
 }
 
 form{

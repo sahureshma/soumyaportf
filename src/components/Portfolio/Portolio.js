@@ -5,7 +5,6 @@ import IMG2 from "../../assest/movie.png";
 import IMG3 from "../../assest/twit.png";
 import IMG4 from "../../assest/kanban.png";
 import IMG5 from "../../assest/gym.png";
-import IMG6 from "../../assest/doc.png";
 
 export default function Portfolio() {
   return (
@@ -153,7 +152,7 @@ help visualize work, limit work-in-progress, and maximize efficiency.
         </article>
         <article className="portfolio__items">
           <div className="porfolio__item-image">
-            <img src={IMG6} alt="IMG6" />
+            <img  alt="IMG6" />
           </div>
           <h3>Google Doc</h3>
           <p>

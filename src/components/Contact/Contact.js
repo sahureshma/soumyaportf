@@ -16,19 +16,20 @@ export default function Contact() {
     <article className='contact__option'>
       <AiOutlineMail className='cantact__icon'/>
       <h4>Email</h4>
-      <h5>ssshureshma17299@gmail.com</h5>
-      <a href="ssshureshma17299@gmail.com">send message</a>
+<h5>soumyaranjansahu910@gmail.com</h5>
+<a href="mailto:ssshureshma17299@gmail.com">Send Message</a>
+
     </article>
     <article className='contact__option'>
       <AiOutlineLinkedin className='cantact__icon'/>
       <h4>Linkedin</h4>
-      <h5>Reshma</h5>
-      <a href="https://www.linkedin.com/in/reshma-sahu-17b741280/" target="blank" >Send  message</a>
+      <h5>Soumya</h5>
+      <a href="https://www.linkedin.com/in/soumya-ranjan-sahu-016973232" target="blank" >Send  message</a>
     </article>
     <article className='contact__option'>
     <AiOutlineWhatsApp className='cantact__icon'/>
 
-      <h4>WhatsApp number: 9777215950</h4>
+      <h4>WhatsApp number:9556308998</h4>
       
     </article>
   </div>
