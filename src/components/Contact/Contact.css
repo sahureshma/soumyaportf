@@ -1,87 +1,181 @@
-.contact__container{
-    width: 68%;
-    display: grid;
-    grid-template-columns: 30% 58%;
-    gap: 12%;
- 
-}
-.con{
-    margin-top: -280px;
-}
-.contact__options{
+/* 🔹 CONTACT SECTION */
+#contact {
+    padding: 4rem 0;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    gap: 1.2rem;
-}
-.contact__option{
-    background: var(--color-bg-variant);
-    padding: 1.2rem;
     text-align: center;
-    border-radius: 1.2rem;
-    border: 1px solid transparent;
-    transition: var(--transition);
 }
-.contact__option:hover{
-    background: transparent;
-    background-color:#24b676;
-    color:black
-}
-.cantact__icon{
+
+/* 🔹 HEADER TEXT */
+.contact-header h3 {
     font-size: 1.5rem;
+    color: #00c9ff;
     margin-bottom: 0.5rem;
 }
 
-.contact__option a{
-    margin-top: 0.7rem;
-    display: inline-block;
-    font-size: 0.8rem;
-}
-.con h3{
-    font-size: 26px;
-
+.contact-header h1 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
 }
 
-form{
+.contact-header p {
+    font-size: 1rem;
+    color: #d1d1d1;
+    margin-bottom: 2rem;
+}
+
+/* 🔹 CONTACT CONTAINER */
+.contact__container {
+    width: 70%;
+    max-width: 850px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+/* 🔹 CONTACT OPTIONS */
+.contact__options {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-}
-input , textarea{
+    gap: 1rem;
     width: 100%;
+    max-width: 350px;
+}
+
+.contact__option {
+    background: rgba(255, 255, 255, 0.15);
     padding: 1.5rem;
-    border-radius: 0.5rem;
-    background:whitesmoke;
-    border: 2px solid var(--color-primary-variant);
-    resize: none;
-    color: white;
-    font-size: 1rem;
-}
-.con{
-    color: white;
+    border-radius: 10px;
     text-align: center;
-    padding-bottom: 15px;
+    transition: 0.3s;
+    border: 2px solid transparent;
 }
 
+.contact__option:hover {
+    border: 2px solid #00c9ff;
+    transform: scale(1.05);
+}
 
-/* medium device TABLATE */
-@media screen and (max-width:1024px) {
-   .contact__container{
-    grid-template-columns: 1fr;
-    gap: 2rem;
-   }
+.contact__icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #00c9ff;
+}
+
+.contact__option h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+}
+
+.contact__option h5 {
+    font-size: 1rem;
+    color: #d1d1d1;
+}
+
+.contact__option a {
+    font-size: 0.9rem;
+    color: #00c9ff;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 0.5rem;
+}
+
+.contact__option a:hover {
+    text-decoration: underline;
+}
+
+/* 🔹 CONTACT FORM */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    max-width: 400px;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 1.8rem;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    border: 2px solid transparent;
+    transition: 0.3s;
+}
+
+form:hover {
+    border: 2px solid #00c9ff;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 8px;
+    background: white;
+    border: 2px solid #00c9ff;
+    font-size: 1rem;
+    color: black;
+}
+
+textarea {
+    resize: none;
+    height: 120px;
+}
+
+/* 🔹 SUBMIT BUTTON */
+.glow-btn {
+    background: #00c9ff;
+    color: black;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.glow-btn:hover {
+    background: #009ac7;
+    box-shadow: 0px 0px 10px #00c9ff;
+}
+
+/* 🔹 RESPONSIVENESS */
+@media screen and (max-width: 1024px) {
+    .contact__container {
+        width: 80%;
+        flex-direction: column;
+        align-items: center;
     }
     
-    /* small device MOBILE */
-    @media screen and (max-width:600px) {
-        .contact__container{
-            grid-template-columns: 1fr;
-            width: var(--container-width-sm);
-           }
-       /* section{
-        margin-top: 20%;
-       }
-       */
-       #contact{
-        margin-top: 32rem;
-       }
+    form {
+        max-width: 80%;
     }
+}
+
+@media screen and (max-width: 600px) {
+    .contact__container {
+        width: 90%;
+    }
+
+    form {
+        width: 100%;
+        padding: 1.5rem;
+    }
+
+    .contact-header h1 {
+        font-size: 2rem;
+    }
+
+    .contact-header p {
+        font-size: 0.9rem;
+    }
+}

@@ -1,58 +1,91 @@
-.skill__frontend button{
-    width: 180px;
-    height: 100px;
-    margin: 1rem;
+/* Skills Section (Balanced Size) */
+#skills {
+    padding: 60px 0; /* Gives good spacing without full-screen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Centering the content inside the skills section */
+.skills-container {
+    width: 75%;
+    max-width: 900px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+/* Section Title */
+.skills-title {
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #eee;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Skills List */
+.skill__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 15px;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Skill Buttons */
+.skill-btn {
+    width: 150px;
+    height: 65px;
     border-radius: 8px;
-    background-color:rgb(12, 12, 162);
+    background-color: rgb(12, 12, 162);
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Hover Effect */
+.skill-btn:hover {
+    background-color: #0d47a1;
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .skills-container {
+        width: 85%;
     }
-    .htmll{
-        background-color: black;
+
+    .skill__list {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     }
-    .ski{
-        text-align: center;
-        padding-bottom: 15px;
+
+    .skill-btn {
+        width: 120px;
+        height: 55px;
     }
-    
-    .skill__frontend h2{
-        color: #fff;
-        font-weight: bolder;
-        text-shadow: black .5px .5px .5px, blue 0px 0px 25px, darkblue 0px 0px 5px;
-        font-size: 15px;
-       
+}
+
+@media screen and (max-width: 480px) {
+    .skills-container {
+        width: 90%;
     }
-    
-    .buttons__img{
-        border-radius: 20px;
-        width: 90px;
-        height: 100px;
-        margin: 2rem;
-       
+
+    .skill__list {
+        grid-template-columns: repeat(2, 1fr);
     }
-    .skill__container{
-       box-shadow: rgb(255, 85, 85) 0px 0px 0px 3px, rgb(193, 27, 143) 0px 0px 0px 6px;
-       border-radius: 5px;
+
+    .skill-btn {
+        width: 110px;
+        height: 50px;
+        font-size: 13px;
     }
-    
-    @media screen and (max-width:675px) {
-        .skill__container{
-            box-shadow:none;
-            margin-left: 3rem;
-        }
-        .skill__frontend button{
-            /* border: 1px solid rgb(189, 100, 100); */
-            width: 20%;
-            height: 5%;
-            /* margin: .5rem; */
-            border-radius: 4px;
-           background-color: transparent;
-            }
-    
-            .buttons__img{
-                border-radius: 20px;
-                width: 35px;
-                height: 60px;
-                display: flex;
-                align-items: center;
-                margin-left: .5rem;
-            }
-    }
+}

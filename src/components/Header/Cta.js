@@ -1,5 +1,5 @@
 import React from 'react'
-import CV from '../../assest/READY RESUME.pdf';
+import CV from '../../assest/Update resume.pdf';
 
 export default function CTA() {
   return (
